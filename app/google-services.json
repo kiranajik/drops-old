@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129456976897",
+    "project_id": "drops-72e3d",
+    "storage_bucket": "drops-72e3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129456976897:android:947b8aa3d116f2fcd2fc00",
+        "android_client_info": {
+          "package_name": "com.kiranajik.pracexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129456976897-cf8r67f8ns1mnmkrj09irna2brrdm040.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF1_0eYh6isXjII6s6hGDWLQ0qhYTNAMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129456976897-cf8r67f8ns1mnmkrj09irna2brrdm040.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

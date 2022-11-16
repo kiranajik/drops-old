@@ -7,30 +7,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UserChoose extends AppCompatActivity {
+public class org_auth extends AppCompatActivity {
 
-    Button orgnzn, donr;
+    Button signup, login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_choose);
+        setContentView(R.layout.activity_org_auth);
 
-        orgnzn=findViewById(R.id.organization);
-        donr=findViewById(R.id.donar);
+        signup = findViewById(R.id.organization);
+        login = findViewById(R.id.donar);
 
-        orgnzn.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserChoose.this,org_auth.class);
+                Intent i = new Intent(org_auth.this,org_signup.class);
                 startActivity(i);
             }
         });
-
-        donr.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserChoose.this,auth.class);
+                Intent i = new Intent(org_auth.this,org_login.class);
                 startActivity(i);
             }
         });

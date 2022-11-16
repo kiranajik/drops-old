@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class signup extends AppCompatActivity {
+public class org_signup extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     Button user_signup_btn;
@@ -27,10 +27,20 @@ public class signup extends AppCompatActivity {
     EditText user_confirm_passwd;
 
 
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        // Check if user is signed in (non-null) and update UI accordingly.
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            reload();
+//        }
+//    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_org_signup);
 
         mAuth = FirebaseAuth.getInstance();
         user_signup_btn = findViewById(R.id.sign_up_btn);
@@ -47,15 +57,7 @@ public class signup extends AppCompatActivity {
 
     }
 
-//    @Override
-//    public void onStart() {
-//        super.onStart();
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        if(currentUser != null){
-//            reload();
-//        }
-//    }
+
 
     private void createAccount(String email, String password) {
         // [START create_user_with_email]
@@ -68,7 +70,7 @@ public class signup extends AppCompatActivity {
                             updateUI(user);
                         } else {
                             Log.e("error name", "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(signup.this, "Authentication failed.",
+                            Toast.makeText(org_signup.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
@@ -78,16 +80,16 @@ public class signup extends AppCompatActivity {
 
 
     private void reload() {
-        Intent i = new Intent(signup.this, DonarHome.class);
+        Intent i = new Intent(org_signup.this, org_home.class);
         startActivity(i);
     }
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            Intent i = new Intent(signup.this, login.class);
+            Intent i = new Intent(org_signup.this, org_login.class);
             startActivity(i);
         } else {
-            Toast.makeText(signup.this, "Authentication failed., Try Again",
+            Toast.makeText(org_signup.this, "Authentication failed., Try Again",
                     Toast.LENGTH_SHORT).show();
         }
     }

@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class login extends AppCompatActivity {
+public class org_login extends AppCompatActivity {
     Button go;
     EditText user_login_email;
     EditText user_login_passwd;
@@ -28,7 +28,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_org_login);
         mAuth = FirebaseAuth.getInstance();
         go = findViewById(R.id.user_sign_in_btn);
         user_login_email = findViewById(R.id.user_login_email);
@@ -67,7 +67,7 @@ public class login extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("error", "signInWithEmail:failure", task.getException());
-                            Toast.makeText(login.this, "Authentication failed.",
+                            Toast.makeText(org_login.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
@@ -76,16 +76,16 @@ public class login extends AppCompatActivity {
     }
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            Intent i = new Intent(login.this, DonarHome.class);
+            Intent i = new Intent(org_login.this, org_home.class);
             startActivity(i);
         } else {
-            Toast.makeText(login.this, "Authentication failed., Try Again",
+            Toast.makeText(org_login.this, "Authentication failed., Try Again",
                     Toast.LENGTH_SHORT).show();
         }
     }
 
     private void reload() {
-        Intent i = new Intent(login.this, DonarHome.class);
+        Intent i = new Intent(org_login.this, org_home.class);
         startActivity(i);
     }
 }
