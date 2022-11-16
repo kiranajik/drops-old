@@ -10,6 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     ConstraintLayout lay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this,auth.class);
-
-
+                startActivity(i);
             }
         });
     }
