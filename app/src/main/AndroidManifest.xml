@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PracExam">
         <activity
+            android:name=".DonarHome"
+            android:exported="false" />
+        <activity
             android:name=".UserChoose"
             android:exported="false" />
         <activity android:name=".nav" />

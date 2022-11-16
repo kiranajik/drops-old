@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.108" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/organization"
         android:layout_width="320dp"
         android:layout_height="55dp"
         android:background="@color/teal_700"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.822" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/donar"
         android:layout_width="320dp"
         android:layout_height="57dp"
         android:text="Log in"

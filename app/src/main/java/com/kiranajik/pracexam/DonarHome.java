@@ -5,31 +5,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
-public class auth extends AppCompatActivity {
+public class DonarHome extends AppCompatActivity {
 
-    Button signup, login;
+    ImageView donr1,donr2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auth);
+        setContentView(R.layout.activity_donar_home);
 
-        signup = findViewById(R.id.organization);
-        login = findViewById(R.id.donar);
+        donr1=findViewById(R.id.donar1);
+        donr2=findViewById(R.id.donar2);
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        donr1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(auth.this,signup.class);
+                Intent i = new Intent(DonarHome.this,nav.class);
                 startActivity(i);
             }
         });
-        login.setOnClickListener(new View.OnClickListener() {
+        donr2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(auth.this,login.class);
+                Intent i = new Intent(DonarHome.this,nav.class);
                 startActivity(i);
             }
         });

@@ -18,7 +18,7 @@ public class login extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(login.this,nav.class);
+                Intent i = new Intent(login.this,DonarHome.class);
                 startActivity(i);
             }
         });

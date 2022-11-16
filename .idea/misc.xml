@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_auth.xml" value="0.22735507246376813" />
-        <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_donar_home.xml" value="0.2" />
+        <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_nav.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_signup.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Midhun/AndroidStudioProjects/drops/app/src/main/res/layout/activity_user_choose.xml" value="0.2" />
       </map>
     </option>
