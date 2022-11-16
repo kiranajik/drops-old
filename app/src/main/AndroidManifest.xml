@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracExam">
-        <activity android:name=".nav"></activity>
+        <activity
+            android:name=".UserChoose"
+            android:exported="false" />
+        <activity android:name=".nav" />
         <activity android:name=".login" />
         <activity android:name=".signup" />
         <activity android:name=".auth" />
