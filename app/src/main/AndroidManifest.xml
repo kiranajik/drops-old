@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracExam">
-        <activity android:name=".org_auth"></activity>
+        <activity android:name=".org_new_camp"></activity>
+        <activity android:name=".existing_org_camps" />
+        <activity android:name=".org_auth" />
         <activity android:name=".org_home" />
         <activity android:name=".org_signup" />
         <activity android:name=".org_login" />
