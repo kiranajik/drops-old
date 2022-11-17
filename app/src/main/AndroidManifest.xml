@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PracExam">
         <activity android:name=".org_new_camp"></activity>
         <activity android:name=".existing_org_camps" />
+        <activity
+            android:name=".userDonationDone"
+            android:exported="false" />
+        <activity
+            android:name=".userQr"
+            android:exported="false" />
         <activity android:name=".org_auth" />
         <activity android:name=".org_home" />
         <activity android:name=".org_signup" />
